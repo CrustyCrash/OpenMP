@@ -23,4 +23,27 @@ int main()
     printf("%d\n",sum);
 
 
+
+    // Without Reduction
+
+    //  int sum[16];
+    // int f_sum = 0;
+    // omp_set_num_threads(16);
+    // #pragma omp parallel 
+    // {
+    //     int ID = omp_get_thread_num();
+    //     sum[ID] = 0;
+    //     #pragma omp for
+    //     for(int i = 1; i <= N; i++)
+    //     {
+    //         sum[ID] += i;
+    //     }
+
+    // }
+    // for (int i = 0; i < 16; i++)
+    // {
+    //     f_sum += sum[i];
+    // }
+    // printf("%d\n",f_sum);
+
 }
